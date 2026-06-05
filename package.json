@@ -1,0 +1,33 @@
+{
+  "name": "video-engine-starter",
+  "version": "1.0.0",
+  "description": "React + Remotion video-as-code starter with LLM routing, multi-provider TTS, and free image generation",
+  "type": "module",
+  "scripts": {
+    "start": "npx remotion studio",
+    "render": "npx remotion render BasicReel",
+    "pipeline": "node pipeline/run.mjs",
+    "build": "npx remotion bundle"
+  },
+  "dependencies": {
+    "@remotion/bundler": "^4.0.0",
+    "@remotion/cli": "^4.0.0",
+    "@remotion/player": "^4.0.0",
+    "remotion": "^4.0.0",
+    "zod": "^3.22.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "typescript": "^5.3.0"
+  },
+  "optionalDependencies": {
+    "google-tts-api": "^2.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT"
+}
